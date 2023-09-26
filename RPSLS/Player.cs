@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    internal abstract class Player
+    public abstract class Player
     {
         //Member Variabes (HAS A)
         public string name;
@@ -17,7 +17,7 @@ namespace RPSLS
         //Constructor
         public Player(string name)
         {
-            this.name = name;
+            this.name = "James";
             gestures = new List<string> {"rock", "paper", "scissors", "lizard", "Spock" };
             chosenGesture = "";
             score = 0;
